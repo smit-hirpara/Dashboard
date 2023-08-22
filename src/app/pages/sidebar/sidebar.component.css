@@ -1,0 +1,22 @@
+.sidebar-body {
+    width: 250px;
+    background-color: #ffff;
+    height: calc(100vh - 56px);
+}
+
+.sidevar-close {
+    width: 250px;
+}
+
+.sidebar-link-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-links {
+    padding: 15px 10px 15px 30px;
+}
+
+.sidebar-links >i {
+    margin: 0 10px 0 0 ;
+}

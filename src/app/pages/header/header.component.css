@@ -85,3 +85,10 @@
     background-color: rgba(206, 206, 206, 0.253);
     color: #acacac;
 }
+
+@media screen and (max-width: 1920px) {
+    .search-bar-section {
+        max-width: 100% !important;
+        margin: 0 10px;
+    }
+}
