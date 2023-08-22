@@ -77,29 +77,11 @@
 .icon-btn:hover,
 .text-btn:hover {
     background-color: rgba(206, 206, 206, 0.137);
+    color: #ffff;
 }
 
 .icon-btn:active,
 .text-btn:active {
     background-color: rgba(206, 206, 206, 0.253);
-}
-
-
-
-@media screen and (max-width: 1024px) {
-    .mobile-searchbar {
-        display: flex !important;
-    }
-
-    .pc-searchbar {
-        display: none;
-    }
-
-    .sm-b-none {
-        display: none;
-    }
-
-    .sm-b-block {
-        display: flex !important;
-    }
+    color: #acacac;
 }
