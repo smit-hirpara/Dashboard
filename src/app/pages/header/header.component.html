@@ -1,0 +1,116 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark d-flex">
+  <div class="container-fluid d-flex flex-nowrap">
+    <!--==================== Left Navbar Section ====================-->
+    <a class="navbar-brand" href="#"><i class="bi bi-list"></i></a>
+    <img
+      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxT7tcVjsrDif2aauRxeSRd0g762HOfotQIvZFMT0mem4thHJvYzTAzIGk7rzToV_n6fnLD3RGMIETQ_h7_T7-OKq_L3FnHiM378ta9nZZY8_LQWG7bAhB6nkOI43unYyzZO-GE1oWyAZ_Hz9b9xYlH-kLThVAhQc0dL5EHYHye5E/s150/top%20logo.png"
+      alt="">
+    <div class="justify-content-between navbar-collapse" id="navbarSupportedContent">
+
+      <!--======================================== Search Bar PC View ========================================-->
+      <!--==================== Center Navbar Section ====================-->
+      <section class="search-bar-section pc-searchbar">
+        <i class="bi bi-shop-window search-field-icon"></i>
+        <div class="dropdown">
+          <a class="btn border-0 text-secondary dropdown-btn dropdown-toggle" href="#" role="button"
+            id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            Company / LLP
+            <i class="bi bi-caret-down ms-1"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <input class="form-control search-bar border-0 me-2" type="search" placeholder="Search  Company By Nme Or PAN"
+          aria-label="Search">
+        <button class="btn search-btn" type="submit"><i class="bi bi-search me-2"></i>Search</button>
+      </section>
+
+      <!--==================== Right Navbar Section ====================-->
+      <section class="d-flex align-items-center ms-auto" style="width: max-content;">
+
+        <!--================= Pc View Buttons =================-->
+        <button class="icon-btn sm-b-none"><i class="bi bi-download"></i></button>
+        <button class="icon-btn sm-b-none"><i class="bi bi-eye"></i></button>
+        <button class="icon-btn sm-b-block" (click)="searchField = !searchField"><i class="bi bi-search"></i></button>
+        <button class="icon-btn"><i class="bi bi-bell"></i></button>
+        <button class="icon-btn sm-b-none"><i class="bi bi-moon-fill"></i></button>
+        <div class="dropdown sm-b-none">
+          <a class="btn border-0 text-btn dropdown-btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-grid"></i>
+            <span>Soluction</span>
+            <i class="bi bi-caret-down ms-1"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <div class="dropdown sm-b-none">
+          <a class="btn border-0 text-btn dropdown-btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-person"></i>
+            <span>Hi,Smit</span>
+            <i class="bi bi-caret-down ms-1"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+
+        <!--================= Mobile View Buttons =================-->
+        <div class="dropdown sm-b-block d-none">
+          <a class="btn border-0 icon-btn dropdown-btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-grid"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <div class="dropdown sm-b-block d-none">
+          <a class="btn border-0 icon-btn dropdown-btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-person"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+</nav>
+
+<!--======================================== Search Bar Mobile View ========================================-->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark mobile-searchbar d-none" *ngIf="searchField">
+  <!--==================== Bottom Navbar Section ====================-->
+  <section class="mobile-search-bar">
+    <i class="bi bi-shop-window search-field-icon"></i>
+    <div class="dropdown">
+      <a class="btn border-0 text-secondary dropdown-btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        Company / LLP
+        <i class="bi bi-caret-down ms-1"></i>
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+    <input class="form-control search-bar border-0 me-2" type="search" placeholder="Search  Company By Nme Or PAN"
+      aria-label="Search">
+    <button class="btn search-btn" type="submit"><i class="bi bi-search me-2"></i>Search</button>
+  </section>
+</nav>
