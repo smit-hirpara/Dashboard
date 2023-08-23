@@ -86,9 +86,26 @@
     color: #acacac;
 }
 
+.mobile-searchbar {
+    position: absolute;
+    top: 55px;
+    z-index: 1;
+    width: 100%;
+}
+
+.navbar-brand {
+    margin: 0 15px;
+}
+
 @media screen and (max-width: 1920px) {
     .search-bar-section {
         max-width: 100% !important;
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-brand {
         margin: 0 10px;
     }
 }

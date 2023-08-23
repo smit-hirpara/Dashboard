@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class WindowSizeService {
 
   constructor() { }
+  sidebarClose: boolean = false;
 
   getBrowserSize() {
     let w: any, h: any;
@@ -32,10 +33,14 @@ export class WindowSizeService {
     if (parseInt(this.getBrowserSize().width) < 1024) {
       this.PcView = false;
       this.mobileView = true;
+  this.sidebarClose = true;
+
     }
     else {
       this.PcView = true;
       this.mobileView = false;
+  this.sidebarClose = false;
+
     }
   }
 }

@@ -15,5 +15,7 @@ export class HeaderComponent implements OnInit {
   constructor(public _windowSize: WindowSizeService) { }
 
   searchField: boolean = false;
-
+  ToggleSidebar() {
+    this._windowSize.sidebarClose = !this._windowSize.sidebarClose;
+  }
 }

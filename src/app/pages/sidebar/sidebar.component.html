@@ -1,5 +1,12 @@
-<section class="sidebar-body">
-  <ul class="sidebar-link-list">
-    <li class="sidebar-links"><i class="bi bi-archive-fill"></i>Link 1</li>
+<section class="sidebar-body" [ngClass]="{'sidevar-close': _windowSize.sidebarClose}">
+  <div class="links-group">
+    <ul class="sidebar-link-list">
+      <ng-container *ngFor="let links of navtItemList">
+        <li class="sidebar-links text-nowrap" routerLinkActive="active-link" [routerLink]="links.path"><i class="{{links.icon}}"></i><span >{{links.name}}</span></li>
+      </ng-container>
+    </ul>
+  </div>
+  <ul class="sidebar-link-list bottom-link">
+    <li class="sidebar-links m-0 text-nowrap"><i class="bi bi-youtube"></i><span>You Tube</span></li>
   </ul>
 </section>
