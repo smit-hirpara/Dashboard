@@ -27,13 +27,14 @@
     height: calc(100vh - 114px);
     overflow-y: scroll;
 }
+
 .links-group::-webkit-scrollbar {
     display: none;
-  }
+}
 
 /*----- Sidebar links -----*/
 .sidebar-links {
-    padding: 15px 10px 15px 28px;
+    padding: 10px 10px 10px 28px;
     font-size: 18px;
     background-color: #ffff;
 }
@@ -41,28 +42,29 @@
 .sidebar-links:hover,
 .active-link {
     background-color: rgba(0, 128, 0, 0.048);
-    border-left:3px solid green;
+    border-left: 3px solid green;
     padding-left: 25px;
     color: green;
+    transition: all 0s ease-in-out;
 }
 
 .active-link {
     background-color: rgba(0, 128, 0, 0.144) !important;
 }
 
-
 /*----- Sidebar links Icon -----*/
-.sidebar-links >i {
-    margin: 0 25px 0 0 ;
+.sidebar-links>i {
+    margin: 0 25px 0 0;
 }
 
 /*----- Sidebar Bottom links -----*/
 .bottom-link {
     position: relative;
     bottom: -0;
-    margin: 0 ;
+    margin: 0;
     width: 100%;
 }
+
 .bottom-link .sidebar-links {
     border-top: 1px solid rgb(201, 201, 201);
 }
@@ -80,5 +82,10 @@
     .sidevar-close {
         width: 60px;
     }
-    
+
+    .sidebar-links:hover,
+    .active-link {
+        border-left: 2px solid green;
+        padding-left: 19px;
+    }
 }

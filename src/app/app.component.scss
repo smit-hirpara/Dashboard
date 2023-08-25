@@ -1,3 +1,14 @@
     .components-loading {
         margin: 10px;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+        .side-bar {
+            position: absolute;
+        }
+
+        .components-loading {
+            margin-left: 65px;
+        }
     }
